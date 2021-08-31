@@ -12,6 +12,22 @@ public class Candidate {
 	private String name;
 	private String party;
 	private int votes;
+	
+	public static void main(String[] args) {
+		
+		Candidate candidate1 = new Candidate("Indira Patel", "Demopublican", 35400);
+		System.out.println(candidate1.getName() + ": " + candidate1.getVotes());
+		
+		Candidate candidate2 = new Candidate("Yannic Gerzen", "Republican", 300);
+		System.out.println(candidate2.getName() + ": " + candidate2.getVotes());
+	
+		Candidate candidate3 = new Candidate("Yale Yoon", "Blue", 2500);
+		System.out.println(candidate3.getName() + ": " + candidate3.getVotes());
+		
+		Candidate candidate4 = new Candidate("Mac Ayres", "Roses", 2345678);
+		System.out.println(candidate4.getName() + ": " + candidate4.getVotes());
+	}
+
 
 	/**
 	 * Construct a new candidate with the specified name, party and number of
